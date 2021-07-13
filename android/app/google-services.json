@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "365048325521",
+    "project_id": "fir-flutter-66497",
+    "storage_bucket": "fir-flutter-66497.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365048325521:android:e7c3fe61e5da27a00ca630",
+        "android_client_info": {
+          "package_name": "souza.rocha.vinicius.com.fluter_basico"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "365048325521-oaug1l5dad2bdn7tndkg6nnejnp8s6o4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCa8pfM58KPMB3VvRO9BOjszDhd_f2-GAU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "365048325521-oaug1l5dad2bdn7tndkg6nnejnp8s6o4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
