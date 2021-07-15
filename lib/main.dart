@@ -2,12 +2,36 @@ import 'package:fluter_basico/home.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 void main() async {
   // Inicializar o Firebase
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-  FirebaseFirestore firestore = FirebaseFirestore.instance;
+
+  /* conection
+      .createUserWithEmailAndPassword(email: email, password: senha)
+      .then((user) => {print(user.user!.uid)})
+      .catchError((error) {
+    print(error);
+  });
+*/
+
+/*
+  User? usuarioAtual = await conection.currentUser;
+
+  if (usuarioAtual != null) {
+    print(usuarioAtual.email);
+  }
+
+  //conection.signOut();
+
+  conection
+      .signInWithEmailAndPassword(email: email, password: senha)
+      .then((user) => {print("Usuario ${user.user!.email} logado com sucesso")})
+      .catchError((error) {
+    print(error.toString());
+  });
 
   /*CollectionReference<Map<String, dynamic>> _refCol =
       firestore.collection("teste");
@@ -46,7 +70,7 @@ void main() async {
     print(dados["nome"] + ' ' + dados['idade'].toString());
   }*/
 
-  QuerySnapshot querySnapshot = await firestore
+  /*QuerySnapshot querySnapshot = await firestore
       .collection("usuarios")
       .where("idade", isLessThan: 26)
       .get();
@@ -55,7 +79,7 @@ void main() async {
   for (DocumentSnapshot item in querySnapshot.docs) {
     dynamic dados = item.data();
     print(dados["nome"] + ' ' + dados['idade'].toString());
-  }
-
+  }*/
+*/
   runApp(MaterialApp(home: Home()));
 }
